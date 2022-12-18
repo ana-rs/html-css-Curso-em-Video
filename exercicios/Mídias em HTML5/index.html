@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imgP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imgM.png" type="image/png">
+        <img src="imagens/imgG.png" alt="Imagem Flexivel">
+    </picture> <br><br><hr>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/God-Rest-Ye-Merry-Gentlmen DJ Williams.mp3" controls></audio>
+    <audio src="midia/Indecision - Dyalla.mp3" controls></audio>
+
+    <!-- tipos: MP3 WAV OGG -->
+    <p>Mais uma opção de inclusão de áudio (com autoplay e loop):</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Indecision - Dyalla.mp3" type="audio/mpeg">
+        <source src="midia/Indecision - Dyalla.mp3" type="audio/ogg">
+        <source src="midia/Indecision - Dyalla.mp3" type="audio/wav"> <!-- arquivos maiores e pesados / evitar -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Indecision - Dyalla.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio> <br><br><hr>
+
+    <h1>Videos com HTML5</h1>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <p>Estes vídeos estão hospedados no meu próprio servidor e consome dados do meu servidor. <br>
+    Essa é uma alternativa mais cara para o cliente.</p>
+
+    <!-- método simples de inserir videos -->
+    <video src="midia/video1.mp4" width="500" controls autoplay loop></video> <br><br><hr><br>
+
+    <!-- método para compatibilidade -->
+    <video controls width="500" poster="imagens/poster.jpg" autoplay loop>
+        <source src="midia/Video2.m4v" type="video/mp4"> <!-- formato mais recomendado -->
+        <source src="midia/video1.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h2>Inserindo vídeos hospedados em outro servidor</h2>
+    <p>Este vídeo está hospedado no Youtube e consome dados do servidor dele. Essa é uma alternativa mais barata para o cliente.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br><br><hr><br>
+
+    <p>Este vídeo está hospedado no Vimeo e consome dados do servidor dele. Essa é uma alternativa paga e mais profissional.</p>
+    <iframe src="https://player.vimeo.com/video/147205406?h=ab23c3f308&color=ff0179" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

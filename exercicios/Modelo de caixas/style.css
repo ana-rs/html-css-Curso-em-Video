@@ -1,0 +1,30 @@
+h1 { /* box-level */
+    background-color: lightgray;
+    height: 40px;
+    width: 380px;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: grey; */
+    border: 5px solid grey;
+
+    padding: 10px; /* shorthand */
+    margin: 20px auto 40px auto;
+     /* margin: auto; centraliza horizontalmente no meio */
+
+     /* outline-width: 3px;
+     outline-style: dashed;
+     outline-color: black;
+
+     outline fica dentro da margin e fora de border */
+     outline: 3px dashed black;
+}
+
+a { /* inline level */
+
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+    border: 2px solid red;
+
+    padding: 1px;
+}

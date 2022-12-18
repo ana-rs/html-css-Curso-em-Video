@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+    @font-face { /* usando no h3 */
+        font-family: 'hello valentine' ;
+        src: url(hello\ valentine\ ttf.ttf) format('truetype');
+        font-weight: normal;
+        font-style: normal;     
+
+         /* Tipos de format:
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography) */   
+    } 
+    
+
+        body {
+            font-family: 'work sans', sans-serif;
+            /*
+            Medidas absolutas:
+            cm, mm, in(polegadas), px, pt(ponto), pc(paica).
+            
+            Medidas relativas:
+            em(relativa ao tamanho atual), ex(relativa à altura x), rem, vw(largura da tela), vh(altura da tela)
+            */
+            font-size: 1em;
+            font-weight: normal;
+            font-style: normal;
+            /* lighter, normal, bold, bolder */
+            text-decoration: nonw;
+        }
+
+        h1 {
+            font-family: 'Neucha', cursive;
+            font-weight: 300;
+            font-size: 3em;
+            font-style: italic;
+
+            /* shorthand font 
+
+            font-style > font-weight > font-size > font-family 
+            
+            ex: 
+            font: italic bolder 3em 'work sans', sans-serif; */            
+        }
+
+        h2 {
+            font: bold 2em 'Merienda One', cursive; /* shorthand */
+        }
+        
+        h3 {
+            font-family: 'hello valentine';
+            font-size: 2.5em;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quod exercitationem doloribus eligendi tempora et ab animi repudiandae hic amet nesciunt provident eveniet sapiente deserunt possimus porro velit eaque sint, temporibus expedita dolorem dicta voluptatibus vitae. Incidunt nemo excepturi minus quas molestiae! Eaque debitis, iste aliquam quidem quisquam dolor ratione velit deserunt iure numquam illo perferendis inventore maxime eius labore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat minima adipisci quisquam eos hic odit libero alias. Doloremque, eius sit. Officiis libero praesentium dolor totam temporibus aliquam voluptatem aspernatur!</p>
+    
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus iusto sed id nostrum fugiat aut molestias iure? Culpa, incidunt quibusdam at eveniet harum beatae nulla!</p>
+
+    <h3>Outro exemplo</h3>
+    <p>Exemplo de fonte fazendo download pelo site Dafont e criando font-family com @font-face</p>
+
+    <h1 style="text-align: center;">Tipos de alinhamento</h1>
+    <h2>Centro</h2>
+    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque saepe ipsa dolores facere unde fugit veritatis culpa explicabo delectus totam.</p>
+
+    <h2>Esquerda</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea eligendi adipisci nemo unde quod praesentium ipsam totam officiis repellat?</p>
+
+    <h2>Direita</h2>
+    <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam similique animi earum maiores debitis accusamus quas. Eaque voluptatem fuga accusantium.</p>
+
+    <h2>Justificado</h2>
+    <p style="text-align: justify; text-indent: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium sint ab ipsum itaque distinctio suscipit modi qui commodi repellat similique.</p>
+</body>
+</html>
