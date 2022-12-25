@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(252, 170, 221, 0.288);
+        }
+
+        iframe {
+            width: 95vw;
+            height: 500px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 7px;
+            box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.151);
+        }
+
+        ul > li {
+            padding: 2px;
+        }
+
+        ul > li > a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        ul > li > a:hover {
+            background-color: rgba(117, 115, 115, 0.911);
+            padding: 5px;
+            text-decoration: underline;
+            border-radius: 2px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça sua escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo cumque quam molestiae tempore? Reiciendis quibusdam maxime obcaecati tempora sint esse, deleniti deserunt id et, fugit cum natus suscipit labore?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina1.html" target="frame">Pagina 1</a></li>
+        <li><a href="paginas-extras/pagina2.html" target="frame">Pagina 2</a></li>
+        <li><a href="paginas-extras/pagina3.html" target="frame">Pagina 3</a></li>
+    </ul>
+
+    <iframe name="frame" srcdoc="<h1> Escolha uma das opções acima</h1> <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio soluta vero voluptatum neque quidem deleniti quasi ad doloribus eum, aspernatur in animi laudantium illo dolore modi praesentium tempore maiores </p>" frameborder="0"></iframe> <!-- srcdoc = pode colocar texto, imagens etc dentro do iframe para nao inicializar vazio -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio soluta vero voluptatum neque quidem deleniti quasi ad doloribus eum, aspernatur in animi laudantium illo dolore modi praesentium tempore maiores.</p>
+
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim similique consequuntur sit, sint asperiores, iure dolorum, commodi ab ullam ipsum amet. Vel adipisci minima id soluta dolorum fuga porro dignissimos, voluptatum itaque provident labore facere! Qui est cupiditate dolorem animi dolore et earum esse culpa?
+</body>
+</html>
