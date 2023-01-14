@@ -7,8 +7,9 @@
     <title>Media Query - Menu Responsivo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Style Icones Google -->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> <!-- icone google -->
@@ -37,7 +38,14 @@
             } else {
                 itens.style.display = 'block'
             }
-
+        
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) { /* se largura for maior ou igual a 768, força exibição do menu */
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         }
     </script>
 </body>
